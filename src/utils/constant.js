@@ -1,3 +1,5 @@
+
+{/*path để click ctrl + c*/}
 export const path = {
     HOME: '/',
     LOGIN: '/login',
