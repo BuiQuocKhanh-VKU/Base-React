@@ -15,6 +15,7 @@ class Login extends Component {
             username: '',
             password: '',
             isShowPassword: false,
+            errMessage: '' //khai báo lỗi
         }
     }
 
@@ -32,9 +33,30 @@ class Login extends Component {
     }
 
     handleLogin = async () => {
-        console.log('username:', this.state.username, 'password:', this.state.password);
-        console.log('all state', this.state)
-        await handleLoginApi(this.state.username, this.state.password);
+        this.setState({// clear lỗi khi nhập lại
+            errMessage: ''
+        })
+
+        try { //post request
+            let data = await handleLoginApi(this.state.username, this.state.password);
+            if (data && data.errCode !== 0) {
+                this.setState({
+                    errMessage: data.message
+                })
+            }
+            if (data && data.errCode === 0) {
+                this.props.userLoginSuccess(data.user); 
+            }
+        } catch (error) {
+            if (error.response) {
+                if (error.response.data) {
+                    this.setState({
+                        errMessage: error.response.data.message
+                    })
+                }
+            }
+            console.log('hoicaigi ', error.response) //response là 1 object lay data tu server
+        }
     }
 
     handleShowHidePassword = () => {
@@ -69,8 +91,12 @@ class Login extends Component {
                                     onChange={(event) => { this.handleOnChangePassword(event) }}
                                 />
                                 <span span onClick={() => { this.handleShowHidePassword() }}>
-                                    <i class={this.state.isShowPassword ? 'far fa-regular fa-eye' : 'far fa-regular fa-eye-slash'}>
+                                    <i className = {this.state.isShowPassword ? 'far fa-regular fa-eye' : 'far fa-regular fa-eye-slash'}>
                                     </i></span>
+                            </div>
+                            <div className="col-12" style={{ color: "red" }}//hiển thị lỗi va style kieu moi 
+                            >
+                                {this.state.errMessage}
                             </div>
                         </div>
 
@@ -96,7 +122,7 @@ class Login extends Component {
         )
     }
 }
-
+ 
 const mapStateToProps = state => {
     return {
         language: state.app.language
@@ -106,8 +132,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         navigate: (path) => dispatch(push(path)),
-        adminLoginSuccess: (adminInfo) => dispatch(actions.adminLoginSuccess(adminInfo)),
-        adminLoginFail: () => dispatch(actions.adminLoginFail()),
+       // userLoginFail: () => dispatch(actions.adminLoginFail()),
+        userLoginSuccess: (userInfor) => dispatch(actions.userLoginSuccess(userInfor))
     };
 };
 
