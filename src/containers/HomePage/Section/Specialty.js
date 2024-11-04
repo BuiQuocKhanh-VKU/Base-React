@@ -12,36 +12,50 @@ class Specialty extends Component {
 
 	render() {
 		let settings = {
-			dots: false,
-			infinite: true,
+			dots: false, //chấm chấm dưới slide 
+			infinite: true, //lặp vô hạn
 			speed: 500,
-			slideToShow: 1,
-			slideTosScroll: 1,
+			slidesToShow: 4, //số lượng slide hiển thị
+			slidesTosScroll: 1, //số lượng slide chuyển khi click
 		}
 
 		return (
 			<div className="section-specialty">
-				<div className="specialty-content">
-					<Slider {...settings}>
-						<div className="img-customize">
-							<h3>1</h3>
-						</div>
-						<div className="img-customize">
-							<h3>2</h3>
-						</div>
-						<div className="img-customize">
-							<h3>3</h3>
-						</div>
-						<div className="img-customize">
-							<h3>4</h3>
-						</div>
-						<div className="img-customize">
-							<h3>5</h3>
-						</div>
-						<div className="img-customize">
-							<h3>6</h3>
-						</div>
-					</Slider>
+				<div className="specialty-container">
+					<div className="specialty-header">
+						<span className="title-section">Popular specialty</span>
+						<button className ="btn-section">See more</button>
+					</div>
+
+					<div className="specialty-body">
+						<Slider {...settings}>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 1</div>
+							</div>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 2</div>
+							</div>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 3</div>
+							</div>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 4</div>
+							</div>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 5</div>
+							</div>
+							<div className="specialty-customize">
+								<div className="bg-image"></div>
+								<div>Musculoskeletal 6</div>
+							</div>
+						</Slider>
+					</div>
+
 				</div>
 
 			</div>
