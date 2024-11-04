@@ -18,6 +18,8 @@ import { CustomToastCloseButton } from '../components/CustomToast';
 
 import HomePage from './HomePage/HomePage.js'; //import HomePage 
 
+import CustomScrollbars from '../components/CustomScrollbars.js';
+
 class App extends Component {
 
     handlePersistorState = () => {
@@ -47,14 +49,16 @@ class App extends Component {
                         {/* nếu logging r thì render tới header */}
                         {this.props.isLoggedIn && <Header />}
 
-                        <span className="content-container">
-                            <Switch>
-                                <Route path={path.HOME} exact component={(Home)} />
-                                <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} /> {/*hàm bọc để check xem người dùng đã đăng nhập hay ch*/}
-                                <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
-                                <Route path={path.HOMEPAGE} component={HomePage} />
-                            </Switch>
-                        </span>
+                        <div className="content-container">
+                            <CustomScrollbars style ={{height: '100vh', width: '100%'}}>
+                                <Switch>
+                                    <Route path={path.HOME} exact component={(Home)} />
+                                    <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} /> {/*hàm bọc để check xem người dùng đã đăng nhập hay ch*/}
+                                    <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                                    <Route path={path.HOMEPAGE} component={HomePage} />
+                                </Switch>
+                            </CustomScrollbars>
+                        </div>
 
                         <ToastContainer  //thong bao
                             className="toast-container" toastClassName="toast-item" bodyClassName="toast-item-body"
