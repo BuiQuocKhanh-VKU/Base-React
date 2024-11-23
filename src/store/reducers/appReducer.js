@@ -13,7 +13,9 @@ const initialState = {
     systemMenuPath: '/system/user-manage',
     contentOfConfirmModal: {
         ...initContentOfConfirmModal
-    }
+    },
+   
+
 }
 
 const appReducer = (state = initialState, action) => {

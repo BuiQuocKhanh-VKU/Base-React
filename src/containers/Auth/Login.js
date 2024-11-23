@@ -45,7 +45,7 @@ class Login extends Component {
                 })
             }
             if (data && data.errCode === 0) {
-                this.props.userLoginSuccess(data.user); 
+                this.props.userLoginSuccess(data.user);
             }
         } catch (error) {
             if (error.response) {
@@ -91,7 +91,7 @@ class Login extends Component {
                                     onChange={(event) => { this.handleOnChangePassword(event) }}
                                 />
                                 <span span onClick={() => { this.handleShowHidePassword() }}>
-                                    <i className = {this.state.isShowPassword ? 'far fa-regular fa-eye' : 'far fa-regular fa-eye-slash'}>
+                                    <i className={this.state.isShowPassword ? 'far fa-regular fa-eye' : 'far fa-regular fa-eye-slash'}>
                                     </i></span>
                             </div>
                             <div className="col-12" style={{ color: "red" }}//hiển thị lỗi va style kieu moi 
@@ -122,7 +122,7 @@ class Login extends Component {
         )
     }
 }
- 
+
 const mapStateToProps = state => {
     return {
         language: state.app.language
@@ -132,7 +132,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         navigate: (path) => dispatch(push(path)),
-       // userLoginFail: () => dispatch(actions.adminLoginFail()),
+        // userLoginFail: () => dispatch(actions.adminLoginFail()),
         userLoginSuccess: (userInfor) => dispatch(actions.userLoginSuccess(userInfor))
     };
 };
