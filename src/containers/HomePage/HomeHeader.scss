@@ -1,5 +1,5 @@
 .home-header-container {
-	height          : 70px;
+	height          : 90px;
 	width           : 100%;
 	padding         : 0 40px;
 	display         : flex;
@@ -16,7 +16,7 @@
 			align-items: center;
 
 			.logo {
-				background         : url('../../assets/logo-healthcare.svg'); 
+				background         : url('../../assets/logo-healthcare.svg');
 				background-position: center center;
 				background-repeat  : no-repeat;
 				background-size    : cover;
@@ -43,7 +43,7 @@
 			.child-content {
 				.subs-title {
 					font-weight: 400;
-					font-size  : 12px;
+					font-size  : 14px;
 				}
 			}
 		}

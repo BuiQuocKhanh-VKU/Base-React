@@ -14,7 +14,7 @@ class HomeHeader extends Component {
 		let language = this.props.language; //lấy biến từ store thông qua props
 
 		return (
-			<React.Fragment>
+			<React.Fragment> 
 				<div className="home-header-container">
 					<div className="home-header-content">
 
