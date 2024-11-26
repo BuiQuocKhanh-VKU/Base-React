@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 class UserRedux extends Component {
-constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-}
-    state = {
-
+        this.state = {
+        }
     }
 
     componentDidMount() {
@@ -16,9 +15,9 @@ constructor(props) {
 
     render() {
         return (
-            <div className ="user-redux-container">
+            <div className="user-redux-container">
                 <div className="title" >User Redux Khanh Bui</div>
-                <div className ="user-redux-body">
+                <div className="user-redux-body">
                     <div>Insert new User </div>
                 </div>
             </div>

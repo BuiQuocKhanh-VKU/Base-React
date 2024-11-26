@@ -17,13 +17,13 @@ class About extends Component {
 						<iframe width="100%" height="400px"
 							src="https://www.youtube.com/embed/5H3SC47cBpo"
 							title="NGƯỜI YÊU GIẢN ĐƠN - CHI DÂN |  OFFICIAL MUSIC VIDEO"
-							frameborder="0"
+							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen></iframe>
+							allowFullScreen></iframe>
 					</div>
 					<div className="content-right">
-<p> Hello</p>
+						<p> Hello</p>
 					</div>
 				</div>
 			</div>
