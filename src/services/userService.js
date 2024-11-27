@@ -26,5 +26,8 @@ const editUserService = (inputData) => {
     return axios.put(`/api/edit-user`, inputData); //goi phuong thuc put de edit user
 };
 
+const getAllCodeService = (inputType) => {
+return axios.get(`/api/allcode?type=${inputType}`); //truyen tham so vao
+}
 
-export { handleLoginApi, getAllUsers, createNewUserService, deleteUserService,editUserService }; //export cac ham de su dung o file khac
+export { handleLoginApi, getAllUsers, createNewUserService, deleteUserService,editUserService,getAllCodeService }; //export cac ham de su dung o file khac

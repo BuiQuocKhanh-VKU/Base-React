@@ -7,15 +7,14 @@
         "doctor": "Doctor",
         "select-doctor": "Choose a good doctor",
         "fee": "Checkup package",
-        "check-health":"General health check",
+        "check-health": "General health check",
         "support": "Assistance",
         "HEALTH FOUNDATION": "HEALTH FOUNDATION",
         "COMPREHENSIVE HEALTH CARE": "COMPREHENSIVE HEALTH CARE",
         "welcome": "Welcome, "
     },
-  
     "menu": {
-       "admin":{
+        "admin": {
             "manage-user": "Users system",
             "manage-doctor": "Manage doctor",
             "manage-admin": "Manage admin",
@@ -26,8 +25,18 @@
             "specialty": "Specialties",
             "manage-speciality": "Manage specialties",
             "handbook": "Handbook",
-            "manage-handbook": "Manage handbook"  
+            "manage-handbook": "Manage handbook"
         }
+    },
+    "manage-user": {
+        "add": "Add user",
+        "password": "Password",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "email": "Email",
+        "phone-number": "Phone number",
+        "role": "Role",
+        "save": "Save user",
+        "image": "Image"
     }
-  
 }

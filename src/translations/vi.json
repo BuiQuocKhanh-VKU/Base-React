@@ -29,6 +29,18 @@
             "handbook": "Sổ tay",
             "manage-handbook": "Quản lý sổ tay"
         }
+    },
+    "manage-user": {
+        "add" :"Thêm người dùng",
+        "password": "Mật khẩu",
+        "first-name": "Tên",
+        "last-name": "Họ",
+        "email": "Email",
+        "phone-number": "Số điện thoại",
+        "role": "Vai trò",
+        "save": "Lưu người dùng",
+        "image": "Ảnh"
     }
+
   
 }

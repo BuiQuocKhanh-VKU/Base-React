@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
+import { LANGUAGES } from '../../../utils';
 import { getAllCodeService } from '../../../services/userService';
 import * as actions from '../../../store/actions';
 
@@ -29,58 +30,73 @@ class UserRedux extends Component {
     }
 
     render() {
+        let genders = this.state.genderArr;
+        let language = this.props.language;
         return (
             <div className="user-redux-container">
                 <div className="title" >Khanh Bui manage users by redux</div>
                 <div className="user-redux-body">
                     <div className="container">
                         <div className="row">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputPassword4">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputAddress">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputAddress2">Address 2</label>
-                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputCity">City</label>
-                                        <input type="text" class="form-control" id="inputCity" />
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputState">State</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Choose...</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="inputZip">Zip</label>
-                                        <input type="text" class="form-control" id="inputZip" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck" />
-                                        <label class="form-check-label" for="gridCheck">
-                                            Check me out
-                                        </label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </form>
+                            <div className="col-12 my-3"><FormattedMessage id="manage-user.add" /></div>
+                            <div className="col-3">
+                                <label>Email</label>
+                                <input type="email" className="form-control" />
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.password" /></label>
+                                <input type="password" className="form-control" />
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.first-name" /></label>
+                                <input type="text" className="form-control" />
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.last-name" /></label>
+                                <input type="text" className="form-control" />
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.phone-number" /></label>
+                                <input type="text" className="form-control" />
+                            </div>
+                            <div className="col-9">
+                                <label><FormattedMessage id="manage-user.adress" /></label>
+                                <input type="text" className="form-control" />
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.gender" /></label>
+                                <select className="form-control">
+                                    {genders && genders.length > 0 &&
+                                        genders.map((item, index) => {
+                                            return (
+                                                <option key={index}>
+                                                    {language === LANGUAGES.VI ? item.valueEn : item.valueVi}
+                                                </option>
+                                            )
+                                        })
+                                    }
+                                </select>
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.position" /></label>
+                                <select className="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.role" /></label>
+                                <select className="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div className="col-3">
+                                <label><FormattedMessage id="manage-user.image" /></label>
+                                <input type="text" className="form-control" />
+                            </div>
+                            <div className="col-12 mt-3 "></div>
+                            <button className="btn btn-primary"><FormattedMessage id="manage-user.save " /></button>
                         </div>
                     </div>
                 </div>

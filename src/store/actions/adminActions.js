@@ -1,5 +1,5 @@
 import actionTypes from './actionTypes';
-import { getAllCodeService } from '../../../services/userService';
+import { getAllCodeService } from '../../services/userService';
 
 // export const fetchGenderStart = () => ({
 //     type: actionTypes.FETCH_GENDER_START
@@ -20,7 +20,7 @@ export const fetchGenderStart = () => {
 		}
 	}
 }
-export const fetchGenderSuccess = () => ({
+export const fetchGenderSuccess = (genderData) => ({
 	type: actionTypes.FETCH_GENDER_SUCCESS,
 	data: genderData
 })
