@@ -24,7 +24,7 @@
             "crud-redux": "CRUD người dùng bằng redux",
             "clinic": "Phòng khám",
             "manage-clinic": "Quản lý phòng khám",
-            "speciality": "Chuyên khoa",
+            "specialty": "Chuyên khoa",
             "manage-speciality": "Quản lý chuyên khoa",
             "handbook": "Sổ tay",
             "manage-handbook": "Quản lý sổ tay"

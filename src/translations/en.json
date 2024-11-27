@@ -23,8 +23,8 @@
             "crud-redux": "CRUD user by redux",
             "clinic": "Clinics",
             "manage-clinic": "Manage clinics",
-            "speciality": "Spwcialities",
-            "manage-speciality": "Manage specialities",
+            "specialty": "Specialties",
+            "manage-speciality": "Manage specialties",
             "handbook": "Handbook",
             "manage-handbook": "Manage handbook"  
         }
