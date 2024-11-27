@@ -12,7 +12,7 @@ class HomeHeader extends Component {
 	}
 	render() {
 		let language = this.props.language; //lấy biến từ store thông qua props
-
+console.log("use info", this.props.userInfo);
 		return (
 			<React.Fragment> 
 				<div className="home-header-container">
@@ -104,6 +104,7 @@ class HomeHeader extends Component {
 const mapStateToProps = state => { //lấy biến thông qua state
 	return {
 		isLoggedIn: state.user.isLoggedIn,
+		userInfo: state.user.userInfo, //lấy thông tin user từ store
 		language: state.app.language,
 	};
 };
