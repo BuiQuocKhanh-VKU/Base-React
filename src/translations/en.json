@@ -37,6 +37,9 @@
         "phone-number": "Phone number",
         "role": "Role",
         "save": "Save user",
-        "image": "Image"
+        "image": "Image",
+        "address": "Address",
+        "position": "Position",
+        "gender": "Gender"
     }
 }
