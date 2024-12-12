@@ -47,10 +47,13 @@
         "save": "Save user",
         "image": "Avatar",
         "address": "Address",
-        "position": "Position",
         "gender": "Gender",
         "position": "Position",
         "edit": "Edit user",
         "delete": "Delete user"
+    },
+    "homepage":{
+        "outstanding-doctor":"Outstanding doctor",
+        "more-infor":"See More"
     }
 }

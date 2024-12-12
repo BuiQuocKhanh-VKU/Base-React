@@ -52,7 +52,10 @@
         "image": "Ảnh",
         "edit": "Lưu thay đổi",
         "delete": "Xóa người dùng"
-        
+    },
+    "homepage":{
+        "outstanding-doctor":"Bác sĩ nổi bật",
+        "more-infor":"Xem thêm"
     }
 
   

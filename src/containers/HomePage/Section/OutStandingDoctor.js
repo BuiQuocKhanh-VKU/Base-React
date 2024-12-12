@@ -30,13 +30,17 @@ class OutStandingDoctor extends Component {
 	render() {
 		let arrDoctors = this.state.arrDoctors;
 		let { language } = this.props;
-		arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors); //nối mảng với chính nó để hiển thị nhiều hơn 3 bác sĩ nổi bật
+		//arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors); //nối mảng với chính nó để hiển thị nhiều hơn 3 bác sĩ nổi bật
+
+
 		return (
 			<div className="section-share section-outstanding-doctor">
 				<div className="section-container">
 					<div className="section-header">
-						<span className="title-section">Outstanding Doctor Lastweek</span>
-						<button className="btn-section">See more</button>
+						<span className="title-section">
+							<FormattedMessage id="homepage.outstanding-doctor" />
+						</span>
+						<button className="btn-section"><FormattedMessage id ="homepage.more-infor"/></button>
 					</div>
 
 					<div className="section-body">

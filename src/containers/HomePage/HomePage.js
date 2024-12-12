@@ -17,7 +17,7 @@ class HomePage extends Component {
 	render() {
 		let settings = {
 			dots: false, //chấm chấm dưới slide 
-			infinite: true, //lặp vô hạn
+			infinite: false, //lặp vô hạn
 			speed: 500,
 			slidesToShow: 4, //số lượng slide hiển thị
 			slidesTosScroll: 1, //số lượng slide chuyển khi click

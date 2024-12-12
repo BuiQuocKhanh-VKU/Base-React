@@ -1,11 +1,11 @@
-.home-header-container{
-	height: 60px;
-	width: 100%;
-	padding : 0 40px;
-	position : sticky ; 
-	top: 0;
-background-color: blue($color: #000000);
-z-index: 100000;
+.home-header-container {
+	height          : 60px;
+	width           : 100%;
+	padding         : 0 40px;
+	position        : sticky;
+	top             : 0;
+	background-color: blue($color: #000000);
+	z-index         : 100000;
 
 }
 
@@ -22,6 +22,7 @@ z-index: 100000;
 
 			.customize-border {
 				border: 1px solid black;
+
 			}
 		}
 	}
@@ -63,9 +64,10 @@ z-index: 100000;
 
 				&.section-outstanding-doctor {
 					// background-image: url('../../assets/outstanding-doctor/doctorkhanh.jpg');
-					width           : 120px;
-					height          : 120px;
-					border-radius   : 50%;
+					width     : 120px;
+					height    : 120px;
+					margin-top: 7px;
+					border-radius: 50%;
 				}
 
 				&.section-handbook {
@@ -111,6 +113,11 @@ z-index: 100000;
 			}
 		}
 	}
+
+}
+
+.slick-disabled {
+	display: none !important;
 }
 
 .section-share {
@@ -183,9 +190,10 @@ z-index: 100000;
 
 		.content-right {
 			width: 40%;
-			p{
-				text-align: justify;
-				font-style: italic;
+
+			p {
+				text-align : justify;
+				font-style : italic;
 				padding-top: 15px;
 			}
 		}
