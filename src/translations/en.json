@@ -11,7 +11,14 @@
         "support": "Assistance",
         "HEALTH FOUNDATION": "HEALTH FOUNDATION",
         "COMPREHENSIVE HEALTH CARE": "COMPREHENSIVE HEALTH CARE",
-        "welcome": "Welcome, "
+        "welcome": "Welcome, ",
+        "popular specialty":"Popular specialty",
+        "Specialized Examination":"Specialized Examination",
+        "Remote Examination":"Remote Examination",
+        "General Examination":"General Examination",
+        "Medical Tests":"Medical Tests",
+        "Mental Health" : "Mental Health",
+        "Detal Examination":"Detal Examination"
     },
     "menu": {
         "admin": {
@@ -26,6 +33,7 @@
             "manage-speciality": "Manage specialties",
             "handbook": "Handbook",
             "manage-handbook": "Manage handbook"
+            
         }
     },
     "manage-user": {

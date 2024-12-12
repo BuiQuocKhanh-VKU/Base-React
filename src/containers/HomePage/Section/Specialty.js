@@ -12,7 +12,7 @@ class Specialty extends Component {
 			<div className="section-share section-specialty">
 				<div className="section-container">
 					<div className="section-header">
-						<span className="title-section">Popular specialty</span>
+						<span className="title-section"> <FormattedMessage id={"homeheader.popular specialty"} /></span>
 						<button className="btn-section">See more</button>
 					</div>
 

@@ -69,27 +69,27 @@ console.log("use info", this.props.userInfo);
 						<div className="options">
 							<div className="option-child">
 								<div className="icon-child"><i className="far fa-hospital"></i></div>
-								<div className="text-child">Specialized Examination</div>
+								<div className="text-child"><FormattedMessage id="homeheader.Specialized Examination" /></div>
 							</div>
 							<div className="option-child">
 								<div className="icon-child"><i className="fas fa-mobile-alt"></i></div>
-								<div className="text-child">Remote Examination</div>
+								<div className="text-child"><FormattedMessage id="homeheader.Remote Examination" /></div>
 							</div>
 							<div className="option-child">
 								<div className="icon-child"><i className="fas fa-hospital-alt"></i></div>
-								<div className="text-child">General Examination</div>
+								<div className="text-child"><FormattedMessage id="homeheader.General Examination" /></div>
 							</div>
 							<div className="option-child">
 								<div className="icon-child"><i className="fas fa-flask"></i></div>
-								<div className="text-child">Medical Tests</div>
+								<div className="text-child"><FormattedMessage id="homeheader.Medical Tests" /></div>
 							</div>
 							<div className="option-child">
 								<div className="icon-child"><i className="fas fa-user-md"></i></div>
-								<div className="text-child">Mental Health</div>
+								<div className="text-child"><FormattedMessage id="homeheader.Mental Health" /></div>
 							</div>
 							<div className="option-child">
 								<div className="icon-child"><i className="fas fa-briefcase medical"></i></div>
-								<div className="text-child">Detal Examination</div>
+								<div className="text-child"><FormattedMessage id="homeheader.Detal Examination" /></div>
 							</div>
 
 						</div>

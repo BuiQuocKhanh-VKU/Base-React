@@ -11,7 +11,14 @@
         "support": "Hỗ trợ",
         "HEALTH FOUNDATION": "NỀN TẢNG SỨC KHOẺ",
         "COMPREHENSIVE HEALTH CARE": "CHĂM SÓC SỨC KHOẺ TOÀN DIỆN",
-        "welcome": "Xin chào, "
+        "welcome": "Xin chào, ",
+        "popular specialty": "Chuyên khoa phổ biến",
+        "Specialized Examination":"Khám chuyên khoa",
+        "Remote Examination":"Khám từ xa",
+        "General Examination":"Khám tổng quát",
+        "Medical Tests":"Xét nghiệm y tế",
+        "Mental Health" : "Sức khỏe tinh thần",
+        "Detal Examination":"Khám răng"
     },
  
     "menu": {

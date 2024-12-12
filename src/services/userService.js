@@ -27,7 +27,16 @@ const editUserService = (inputData) => {
 };
 
 const getAllCodeService = (inputType) => {
-return axios.get(`/api/allcode?type=${inputType}`); //truyen tham so vao
+    return axios.get(`/api/allcode?type=${inputType}`); //truyen tham so vao
 }
 
-export { handleLoginApi, getAllUsers, createNewUserService, deleteUserService,editUserService,getAllCodeService }; //export cac ham de su dung o file khac
+const getTopDoctorHomeService = (limit) => {
+    return axios.get(`/api/top-doctor-home?limit=${limit}`);
+}
+
+export {
+    handleLoginApi, getAllUsers,
+    createNewUserService, deleteUserService,
+    editUserService, getAllCodeService,
+    getTopDoctorHomeService,
+}; //export cac ham de su dung o file khac
