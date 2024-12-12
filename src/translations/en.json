@@ -37,9 +37,12 @@
         "phone-number": "Phone number",
         "role": "Role",
         "save": "Save user",
-        "image": "Image",
+        "image": "Avatar",
         "address": "Address",
         "position": "Position",
-        "gender": "Gender"
+        "gender": "Gender",
+        "position": "Position",
+        "edit": "Edit user",
+        "delete": "Delete user"
     }
 }

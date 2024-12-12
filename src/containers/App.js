@@ -42,10 +42,10 @@ class App extends Component {
                 <Router history={history}>
                     <div className="main-container">
                         {/* nếu logging r thì render tới header */}
-                    
+
 
                         <div className="content-container">
-                            <CustomScrollbars style ={{height: '100vh', width: '100%'}}>
+                            <CustomScrollbars style={{ height: '100vh', width: '100%' }}>
                                 <Switch>
                                     <Route path={path.HOME} exact component={(Home)} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} /> {/*hàm bọc để check xem người dùng đã đăng nhập hay ch*/}
@@ -55,12 +55,25 @@ class App extends Component {
                             </CustomScrollbars>
                         </div>
 
-                        <ToastContainer  //thong bao
+                        {/* <ToastContainer  //thong bao
                             className="toast-container" toastClassName="toast-item" bodyClassName="toast-item-body"
                             autoClose={false} hideProgressBar={true} pauseOnHover={false}
                             pauseOnFocusLoss={true} closeOnClick={false} draggable={false}
                             closeButton={<CustomToastCloseButton />}
+                        /> */}
+
+                        <ToastContainer //thong bao
+                            position='bottom-right'
+                            autoClose={4000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
                         />
+
                     </div>
                 </Router>
             </Fragment>

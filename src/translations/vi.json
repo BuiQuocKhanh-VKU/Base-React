@@ -42,7 +42,10 @@
         "phone-number": "Số điện thoại",
         "role": "Vai trò",
         "save": "Lưu người dùng",
-        "image": "Ảnh"
+        "image": "Ảnh",
+        "edit": "Lưu thay đổi",
+        "delete": "Xóa người dùng"
+        
     }
 
   
